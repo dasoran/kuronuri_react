@@ -12,7 +12,7 @@ class App extends Component {
         "黒塗りの高級車",
         "後輩",
         "三浦",
-        "暴力団員谷岡"
+        "車の主、暴力団員谷岡"
       ]
     };
   }
@@ -81,7 +81,7 @@ class Kitsunemimi extends Component {
         <div className="result">
           <p>{this.props.templateData[0]}。</p>
           <p>疲れからか、不幸にも{this.props.templateData[1]}に追突してしまう。{this.props.templateData[2]}をかばいすべての責任を負った{this.props.templateData[3]}に対し、</p>
-          <p>車の主、{this.props.templateData[4]}に言い渡された示談の条件とは・・・。</p>
+          <p>{this.props.templateData[4]}に言い渡された示談の条件とは・・・。</p>
         </div>
       </div>
     );
@@ -92,7 +92,7 @@ class Nekomimi extends Component {
   render() {
     return (
       <div className="Nakomimi">
-        <a href={`https://twitter.com/intent/tweet?text=${this.props.templateData[0]}。疲れからか、不幸にも${this.props.templateData[1]}に追突してしまう。${this.props.templateData[2]}をかばいすべての責任を負った${this.props.templateData[3]}に対し、車の主、${this.props.templateData[4]}に言い渡された示談の条件とは・・・。`}>tweetする</a>
+        <a href={`https://twitter.com/intent/tweet?text=${this.props.templateData[0]}。疲れからか、不幸にも${this.props.templateData[1]}に追突してしまう。${this.props.templateData[2]}をかばいすべての責任を負った${this.props.templateData[3]}に対し、${this.props.templateData[4]}に言い渡された示談の条件とは・・・。`}>tweetする</a>
       </div>
     );
   }
